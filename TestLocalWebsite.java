@@ -19,6 +19,13 @@ public class TestLocalWebsite {
 		//radio button data insert
 		driver.findElement(By.id("male")).click();
 		
+		//checkbox data insert
+		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[8]/td[2]/input[1]")).click();
+		
+		
+		// drop down list data insert
+		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[9]/td[2]/select")).sendKeys("B.Tech");
+		
 		
 		
 
