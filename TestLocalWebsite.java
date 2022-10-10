@@ -1,5 +1,6 @@
 package testLocalWebsite;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -9,6 +10,17 @@ public class TestLocalWebsite {
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("file:///E:/Year 03 Semester 02/CS 3212/Activity 2022-09-07/index.html");
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+
+		
+		//data to a text field
+		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")).sendKeys("Joseph Vijay");
+		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[3]/td[2]/input")).sendKeys("1974-06-22");
+		
+		//radio button data insert
+		driver.findElement(By.id("male")).click();
+		
+		
+		
 
 	}
 
